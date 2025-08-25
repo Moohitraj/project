@@ -1,0 +1,65 @@
+[
+  { "code": "NDLS", "name": "New Delhi" },
+  { "code": "DLI", "name": "Delhi" },
+  { "code": "NZM", "name": "Hazrat Nizamuddin" },
+  { "code": "SNP", "name": "Sonipat" },
+  { "code": "PNP", "name": "Panipat" },
+  { "code": "KUN", "name": "Karnal" },
+  { "code": "AMB", "name": "Ambala Cantt Jn" },
+  { "code": "CDG", "name": "Chandigarh" },
+
+  { "code": "BCT", "name": "Mumbai Central" },
+  { "code": "CSTM", "name": "Mumbai CSMT" },
+  { "code": "DDR", "name": "Dadar" },
+  { "code": "BDTS", "name": "Bandra Terminus" },
+  { "code": "KYN", "name": "Kalyan Jn" },
+  { "code": "TNA", "name": "Thane" },
+  { "code": "PNVL", "name": "Panvel" },
+
+  { "code": "SBC", "name": "Bengaluru City Jn" },
+  { "code": "YPR", "name": "Yesvantpur Jn" },
+  { "code": "KJM", "name": "Krishnarajapuram" },
+
+  { "code": "MAS", "name": "Chennai Central" },
+  { "code": "MS", "name": "Chennai Egmore" },
+  { "code": "PER", "name": "Perambur" },
+
+  { "code": "HWH", "name": "Howrah Jn" },
+  { "code": "SDAH", "name": "Sealdah" },
+  { "code": "KOAA", "name": "Kolkata" },
+
+  { "code": "SC", "name": "Secunderabad Jn" },
+  { "code": "HYB", "name": "Hyderabad Deccan" },
+  { "code": "KCG", "name": "Kacheguda" },
+
+  { "code": "ADI", "name": "Ahmedabad Jn" },
+  { "code": "BRC", "name": "Vadodara Jn" },
+  { "code": "ST", "name": "Surat" },
+
+  { "code": "PUNE", "name": "Pune Jn" },
+  { "code": "NGP", "name": "Nagpur" },
+  { "code": "BPL", "name": "Bhopal Jn" },
+  { "code": "JHS", "name": "Jhansi Jn" },
+  { "code": "CNB", "name": "Kanpur Central" },
+  { "code": "LKO", "name": "Lucknow NR" },
+
+  { "code": "JP", "name": "Jaipur" },
+  { "code": "HMH", "name": "Hanumangarh Jn" },
+  { "code": "UDZ", "name": "Udaipur City" },
+
+  { "code": "ASR", "name": "Amritsar Jn" },
+  { "code": "LDH", "name": "Ludhiana Jn" },
+  { "code": "JAT", "name": "Jammu Tawi" },
+
+  { "code": "LTT", "name": "Lokmanya Tilak T" },
+  { "code": "ERS", "name": "Ernakulam Jn" },
+  { "code": "TVC", "name": "Trivandrum Central" },
+  { "code": "MAQ", "name": "Mangalore Central" },
+
+  { "code": "SVDK", "name": "Shri Mata Vaishno Devi Katra" },
+  { "code": "BBS", "name": "Bhubaneswar" },
+  { "code": "VSKP", "name": "Visakhapatnam" },
+  { "code": "DBRG", "name": "Dibrugarh" },
+  { "code": "GHY", "name": "Guwahati" }
+]
+
