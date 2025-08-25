@@ -1,0 +1,92 @@
+/* Railways Ticketing System Styles */
+:root{
+  --primary:#0d6efd; --success:#198754; --bg:#0b132b; --bg2:#1c2541; --grad1:#3a506b; --grad2:#5bc0be; --light:#f8f9fa; --muted:#6c757d;
+}
+
+body{font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#f5f7fb;}
+
+.hero-section{position:relative; background: radial-gradient(1200px 300px at 50% -100px, rgba(91,192,190,.35), transparent), linear-gradient(135deg, var(--bg), var(--bg2));}
+.hero-section::before{content:""; position:absolute; inset:0; background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%235bc0be" fill-opacity="0.2" d="M0,160L80,170.7C160,181,320,203,480,197.3C640,192,800,160,960,138.7C1120,117,1280,107,1360,101.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>'); background-size:cover; opacity:.35; pointer-events:none}
+.hero-section .search-card{max-width:1100px; border-radius:16px; background:#ffffffcc; backdrop-filter: blur(6px);}
+
+/* Dark theme */
+body[data-bs-theme='dark']{ background:#0b0f1a; color:#e6e6e6; }
+body[data-bs-theme='dark'] .navbar{ background-color:#0a3d91 !important; }
+body[data-bs-theme='dark'] .card{ background:#121826; color:#d9dee8; border-color:#1e2638; }
+body[data-bs-theme='dark'] .table{ color:#cfd6e6; }
+body[data-bs-theme='dark'] .table-striped>tbody>tr:nth-of-type(odd)>*{ --bs-table-bg-type:#0f1524; }
+body[data-bs-theme='dark'] .form-control, body[data-bs-theme='dark'] .form-select{ background:#0f1524; border-color:#26324a; color:#e6e6e6; }
+body[data-bs-theme='dark'] .form-control::placeholder{ color:#8a93a6; }
+body[data-bs-theme='dark'] .modal-content{ background:#0f1524; color:#e6e6e6; border-color:#26324a; }
+body[data-bs-theme='dark'] .hero-section .search-card{ background:#0f1524cc; }
+body[data-bs-theme='dark'] .chat-window{ background:#0f1524; }
+body[data-bs-theme='dark'] .chat-message.bot{ background:#0e2238; color:#b3d4ff }
+body[data-bs-theme='dark'] .chat-message.user{ background:#0e3822; color:#b5f1c5 }
+
+.table thead th{white-space:nowrap}
+#realtimeBadge{display:flex;align-items:center;gap:.25rem}
+
+/* Modals */
+.modal-content{border-radius:14px}
+
+/* Chat */
+.chat-window{height:260px; overflow:auto; background:#f8f9fa; border-radius:10px; padding:12px;}
+.chat-message{padding:10px 12px; border-radius:12px; margin-bottom:8px; max-width:80%}
+.chat-message.bot{background:#e9f5ff; color:#084298}
+.chat-message.user{background:#e8f5e9; color:#1b5e20; margin-left:auto}
+
+/* Accessibility tweaks */
+.btn:focus, .form-control:focus, .form-select:focus{box-shadow:0 0 0 .25rem rgba(13,110,253,.25)}
+
+/* Utilities */
+.small{font-size:0.9rem} 
+
+/* Visual polish */
+html{scroll-behavior:smooth}
+.navbar .navbar-brand{letter-spacing:.3px}
+.hero-section .search-card{box-shadow:0 8px 30px rgba(13,110,253,.12)}
+.hero-section .search-card:focus-within{box-shadow:0 10px 36px rgba(25,135,84,.18)}
+
+/* Buttons */
+.btn-primary{background:linear-gradient(135deg,#0d6efd,#0a58ca); border-color:#0a58ca}
+.btn-primary:hover{filter:brightness(.98)}
+.btn-success{background:linear-gradient(135deg,#198754,#157347); border-color:#157347}
+.btn-outline-secondary:hover{background:#eef2f7}
+
+/* Table & rows */
+.table tr{transition:background-color .2s ease}
+.table tbody tr:hover{background:rgba(13,110,253,.06)}
+.badge{box-shadow:0 1px 0 rgba(0,0,0,.06)}
+
+/* Cards */
+.card{box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.card-title{letter-spacing:.2px}
+
+/* Modals */
+.modal-header{background:linear-gradient(180deg, rgba(13,110,253,.06), transparent)}
+.modal-footer{background:linear-gradient(0deg, rgba(0,0,0,.03), transparent)}
+
+/* Forms */
+.form-control, .form-select{transition:box-shadow .2s ease, border-color .2s ease}
+.form-control:hover, .form-select:hover{border-color:#b6c6ff}
+.input-group .btn{height:100%}
+
+/* Chat */
+.chat-window{box-shadow:inset 0 0 0 1px rgba(0,0,0,.04)}
+
+/* Footer */
+footer a{position:relative}
+footer a::after{content:""; position:absolute; left:0; bottom:-2px; height:2px; width:0; background:currentColor; transition:width .2s ease}
+footer a:hover::after{width:100%}
+
+/* Subtle motion */
+@media (prefers-reduced-motion: no-preference){
+  .btn{transition:transform .08s ease}
+  .btn:active{transform:translateY(1px)}
+}
+
+/* Dark theme refinements */
+body[data-bs-theme='dark'] .table tbody tr:hover{background:#0f1627}
+body[data-bs-theme='dark'] .btn-outline-secondary:hover{background:#0f1524}
+body[data-bs-theme='dark'] .modal-header{background:linear-gradient(180deg, rgba(91,192,190,.08), transparent)}
+body[data-bs-theme='dark'] .modal-footer{background:linear-gradient(0deg, rgba(38,50,74,.25), transparent)} 
